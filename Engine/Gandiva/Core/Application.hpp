@@ -35,12 +35,11 @@ namespace Gandiva
 			virtual void render(void) = 0;
 
 			static LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
+			Graphics::Renderer* m_renderer;
 
 		private:
 			HINSTANCE m_hInstance;
 			HWND m_window;
-
-			Graphics::Renderer* m_renderer;
 		};
 	}
 }
